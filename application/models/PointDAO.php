@@ -9,6 +9,6 @@ class PointDAO extends CI_Model {
     public function getAllPoints()
 	{
         $query = $this->db->query('SELECT * FROM point');
-        return $query->result_array();
+        return $query->result();
     }
 }

@@ -31,9 +31,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             foreach($points as $key => $value){
                         ?>
                             <tr>
-                                <th scope="row"><?php echo $value['id']; ?></th>
-                                <td><?php echo $value['x']; ?></td>
-                                <td><?php echo $value['y']; ?></td>
+                                <th scope="row"><?php echo $value->id; ?></th>
+                                <td><?php echo $value->x; ?></td>
+                                <td><?php echo $value->y; ?></td>
                             </tr>
                         <?php
                             }
