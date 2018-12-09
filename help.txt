@@ -1,0 +1,5 @@
+
+// how to use controller
+Controller : Welcome
+page: myIndex (function)
+url : http://localhost:8080/diagnostic/index.php/Welcome/myIndex
