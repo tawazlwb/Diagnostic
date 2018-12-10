@@ -12,10 +12,10 @@ class HelloWorld extends CI_Controller {
 	public function index()
 	{	
 		$this->load->model('message','msg');
-		$this->load->model('pointdao','p');
+		$this->load->model('pointmodel','pointModel');
 		$data = array(
 			'message' => $this->msg,
-			'points' => $this->p->getAllPoints()
+			'points' => $this->pointModel->getAllPoints()
 		);
 		$this->load->view('helloworld', $data);
 	}
