@@ -3,3 +3,9 @@
 Controller : Welcome
 page: myIndex (function)
 url : http://localhost:8080/diagnostic/index.php/Welcome/myIndex
+
+RewriteEngine on
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L,QSA] 
