@@ -7,6 +7,7 @@ class HelloWorld extends CI_Controller {
 		parent::__construct();
 		// Load url helper
 		$this->load->helper('url');
+		$this->load->helper('common'); // OR $this->load->helper('common_helper');
 	}
 
 	public function index()

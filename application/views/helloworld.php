@@ -23,6 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <th scope="col">#</th>
                             <th scope="col">X</th>
                             <th scope="col">Y</th>
+                            <th scope="col">Z=X+Y</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -34,6 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <th scope="row"><?php echo $value->id; ?></th>
                                 <td><?php echo $value->x; ?></td>
                                 <td><?php echo $value->y; ?></td>
+                                <td><?php echo add($value->x, $value->y); ?></td>
                             </tr>
                         <?php
                             }
