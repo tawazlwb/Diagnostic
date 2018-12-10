@@ -11,7 +11,8 @@ class HelloWorld extends CI_Controller {
 	{	
 		$data = array(
 			'message' => $this->msg,
-			'points' => $this->pointModel->getAllPoints()
+			'points' => $this->pointModel->getAllPoints(),
+			'title' => $this->diag_lib->getTitle()
 		);
 		$this->load->view('helloworld', $data);
 	}

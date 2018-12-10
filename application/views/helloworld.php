@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Diagnostic</title>
+        <title><?php echo $title; ?></title>
         <link rel="icon" href="<?php echo base_url('app_vue/custom/img/microscope.svg'); ?>">
         <link rel="stylesheet" href="<?php echo base_url('app_vue/node_modules/bootstrap/dist/css/bootstrap.min.css'); ?>">
         <link rel="stylesheet" href="<?php echo base_url('app_vue/custom/css/style.css'); ?>">
@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <body>
         <div class="container mt-5">
             <div class="text-center">
-                <h1 class=>Diagnostic</h1>
+                <h1 class=><?php echo $title; ?></h1>
                 <h5><?php echo $message->sender(); ?></h5>
                 <h1><?php echo $message->content(); ?></h1>
             </div>
